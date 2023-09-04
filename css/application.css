@@ -139,11 +139,13 @@ nav .active
     background: transparent;
     background-size: cover;
     background-position: center;
+    justify-content: space-between;
 
 }
 .accueil-tout
 {
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -154,7 +156,7 @@ nav .active
 }
 .accueil-content
 {
-    max-width: 640px;
+    max-width: 560px;
     
 }
 .accueil-content h1
@@ -185,10 +187,21 @@ nav .active
     background: transparent;
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: space-between;
 }
-.accueil-content2
+.accueil-image
 {
-    max-width: 640px;
+    padding-left: 10%;
+}
+.accueil-image img
+{
+    height: 50%;
+    width: 90%;
+}
+.accueil-content2 p
+{
+    max-width: 560px;
 }
 .accueil-content2 h1
 {
@@ -206,4 +219,19 @@ nav .active
 {
     font-size: 16px;
     margin: 20px 0 40px;
+}
+.groupe-boite
+{
+    text-align: center;
+}
+.groupe-boite h1
+{
+    font-size: 53px;
+    color:#0379bd;
+}
+.groupe-boite img
+{
+    padding-top: 5%;
+    height: 70%;
+    width: 40%;
 }
