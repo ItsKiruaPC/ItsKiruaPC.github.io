@@ -368,7 +368,6 @@ nav .active
     display: flex;
     text-align: center;
     justify-content: space-between;
-    gap: 450px;
     margin-top: 5%;
 }
 .boite
