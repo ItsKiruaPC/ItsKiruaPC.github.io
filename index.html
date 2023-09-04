@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -11,8 +11,11 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo"><img src="images/AF.png"></a>
-            <nav class="navbar">
+        <a href="index.html" class="logo"><img src="images/AF.png"></a><a class="icon" onclick="myFunction()">
+            <i class='bx bx-menu'></i>
+          </a>
+            <nav class="navbar" id="myNavbar">
+                
                     <a href="#home" class="active">Accueil</a>
                     <a href="#presentation">Présentation</a>
                     <a href="#filiere">Filière</a>
@@ -27,7 +30,8 @@
                     <a href="html/stage.html">Stages</a>
                     <a href="html/veille-informatique.html">Veille Informatique</a>
                     <a href="html/contact.html">Contact</a>
-            </nav>
+                    
+                </nav>
     </header>
     <div class="button-up">
         <a href="#home"><i class='bx bx-up-arrow-alt' style="color: white;"></i></a>

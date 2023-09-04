@@ -26,6 +26,80 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+@media screen and (max-width: 615px)
+{
+    .accueil2
+    {
+        margin-top: 40%;
+    }
+    .accueil3
+    {
+        margin-top: 60%;
+        text-align: center;
+    }
+    .header img
+    {
+        display: none;
+    }
+    .navbar
+    {
+        height: fit-content;
+        margin-left: 30px;
+        align-items: center;
+    }
+    .groupe-boite
+    {  
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    .boite
+    {
+        padding-top: 30px;
+    }
+    .branches
+    {
+        padding-top: 50px !important;
+    }
+    .button-up
+    {
+        
+    }
+    
+}
+@media screen and (max-width: 615px) {
+    .navbar a {font-size: 20px;margin-bottom: 5px;}
+    .navbar a {margin-left: 25px;}
+    .navbar a:not(:nth-child(0)) {display: none;}
+    .dropdown ul {display: none;}
+    a.icon {
+      float: left;
+      display: block;
+      padding-left: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 615px) {
+    .navbar.responsive {position: relative;}
+    .icon {
+      position: absolute;
+      align-items: center;
+      font-size: 200%;
+      left: 0;
+
+      color: white;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar a::before
+    {
+        display: none;
+    }
+  }
 .dark-mode
 {
     --clr-light: #001a28;
@@ -55,9 +129,14 @@ body
     align-items: center;
     margin-top: 10px;
 }
+.icon {
+    display: none;
+}
+
 .navbar
 {
     display: flex;
+    
 }
 .navbar a
 {
@@ -368,12 +447,12 @@ nav .active
     display: flex;
     text-align: center;
     justify-content: space-between;
-    gap: 450px;
     margin-top: 5%;
 }
 .boite
 {
     max-width: 560px;
+    padding-left: 20px;
 }
 .boite-titre
 {
