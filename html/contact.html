@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include('../php/connexion.php');?>
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="../images/AF.png"></a>
+            <nav class="navbar">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="index.html#presentation">Présentation</a>
+                    <a href="index.html#filiere">Filière</a>
+                    <ul class="dropdown">
+                        <li><a href="atelier-pro.html">Projets</a>
+                        <ul class="dropdown-scroll">
+                            <li><a href="application.html">Application</a></li>
+                            <li><a href="website.html">Site Web</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <a href="stage.html">Stages</a>
+                    <a href="veille-informatique.html">Veille Informatique</a>
+                    <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+
+    <section class="connection">
+        
+        <div class="body">
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Identifiant</span>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required">
+                <span>Mot de passe</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
