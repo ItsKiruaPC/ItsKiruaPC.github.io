@@ -43,9 +43,20 @@
     }
     .navbar
     {
+        background-color: rgb(3, 22, 73);
+       justify-content: space-around;
+       padding-left: 15px;
+       display: none;
+    }
+    .navbar a::before{
+        display: none;
+    }
+    .header
+    {
         height: fit-content;
-        margin-left: 30px;
+        justify-content: space-between;
         align-items: center;
+        
     }
     .groupe-boite
     {  
@@ -66,40 +77,33 @@
     {
         
     }
-    
-}
-@media screen and (max-width: 615px) {
-    .navbar a {font-size: 20px;margin-bottom: 5px;}
-    .navbar a {margin-left: 25px;}
-    .navbar a:not(:nth-child(0)) {display: none;}
+    .navbar a 
+    {
+        font-size: 17px;
+        
+    }
+    #myNavbar {
+        display: none;
+    }
     .dropdown ul {display: none;}
+    .dropdown li 
+    {
+        float: left;
+    }
     a.icon {
       float: left;
       display: block;
       padding-left: 5px;
     }
-  }
-  
-  @media screen and (max-width: 615px) {
-    .navbar.responsive {position: relative;}
     .icon {
-      position: absolute;
-      align-items: center;
-      font-size: 200%;
-      left: 0;
-
-      color: white;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .navbar a::before
-    {
-        display: none;
-    }
-  }
+        position: absolute;
+        align-items: center;
+        font-size: 200%;
+        left: 0;
+        color: white;
+      }
+    
+}
 .dark-mode
 {
     --clr-light: #001a28;

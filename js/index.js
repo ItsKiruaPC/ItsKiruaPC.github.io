@@ -19,11 +19,11 @@ window.onscroll = () =>
     })
 }
 
-function myFunction() {
+  function myFunction2() {
     var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
-      x.className = "navbar";
+      x.style.display = "block";
     }
   }

@@ -26,6 +26,84 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+@media screen and (max-width: 615px)
+{
+    .accueil2
+    {
+        margin-top: 40%;
+    }
+    .accueil3
+    {
+        margin-top: 60%;
+        text-align: center;
+    }
+    .header img
+    {
+        display: none;
+    }
+    .navbar
+    {
+        background-color: rgb(3, 22, 73);
+       justify-content: space-around;
+       padding-left: 15px;
+       display: none;
+    }
+    .navbar a::before{
+        display: none;
+    }
+    .header
+    {
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .groupe-boite
+    {  
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    .boite
+    {
+        padding-top: 30px;
+    }
+    .branches
+    {
+        padding-top: 50px !important;
+    }
+    .button-up
+    {
+        
+    }
+    .navbar a 
+    {
+        font-size: 17px;
+        
+    }
+    #myNavbar {
+        display: none;
+    }
+    .dropdown ul {display: none;}
+    .dropdown li 
+    {
+        float: left;
+    }
+    a.icon {
+      float: left;
+      display: block;
+      padding-left: 5px;
+    }
+    .icon {
+        position: absolute;
+        align-items: center;
+        font-size: 200%;
+        left: 0;
+        color: white;
+      }
+    
+}
 .dark-mode
 {
     --clr-light: #001a28;

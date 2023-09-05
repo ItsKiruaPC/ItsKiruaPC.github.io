@@ -9,9 +9,12 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo"><img src="../images/AF.png"></a>
-            <nav class="navbar">
-                    <a href="../index.html" class="active">Accueil</a>
+        <a href="../index.html" class="logo"><img src="../images/AF.png"></a>
+        <a class="icon" onclick="myFunction2()">
+            <i class='bx bx-menu'></i>
+          </a>
+            <nav class="navbar" id="myNavbar">
+                    <a href="../index.html#home" class="active">Accueil</a>
                     <a href="../index.html#presentation">Présentation</a>
                     <a href="../index.html#filiere">Filière</a>
                     <ul class="dropdown">
@@ -21,11 +24,13 @@
                             <li><a href="website.html">Site Web</a></li>
                         </ul>
                     </li>
-                    </ul>
+                </ul>
+            
                     <a href="stage.html">Stages</a>
                     <a href="veille-informatique.html">Veille Informatique</a>
                     <a href="contact.html">Contact</a>
-            </nav>
+                
+                </nav>
     </header>
 
     <section class="accueil">
@@ -53,6 +58,6 @@
 
         </div>
     </section>
-
+    <script src="js/index.js"></script>
 </body>
 </html>
