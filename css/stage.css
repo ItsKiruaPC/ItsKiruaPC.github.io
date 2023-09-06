@@ -28,15 +28,18 @@
 }
 @media screen and (max-width: 615px)
 {
-    .accueil2
+    .boite
     {
-        margin-top: 40%;
+        flex-direction: column;
+        
     }
-    .accueil3
+    .box
     {
-        margin-top: 60%;
-        text-align: center;
+        height: 200px !important;
+        width: 400px !important;
+        padding-left: 0%;
     }
+
     .header img
     {
         display: none;
@@ -136,6 +139,10 @@ body
 .navbar
 {
     display: flex;
+}
+a.icon
+{
+    display: none;
 }
 .navbar a
 {

@@ -138,6 +138,10 @@ body
 {
     display: flex;
 }
+a.icon
+{
+    display: none;
+}
 .navbar a
 {
     position: relative;

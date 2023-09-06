@@ -43,23 +43,6 @@
         width: 400px !important;
         padding-left: 0%;
     }
-    .minibox h2
-    {
-        margin: 0 auto;
-    }
-
-    .afficher
-    {
-        height: 300px;
-        width: 400px;
-        
-    }
-    .box .afficher::before
-    {
-        height: 300px !important;
-        width: 400px !important;
-        
-    }
     .header img
     {
         display: none;
@@ -160,6 +143,10 @@ body
 {
     display: flex;
 }
+a.icon
+{
+    display: none;
+}
 .navbar a
 {
     position: relative;
@@ -232,6 +219,7 @@ nav .active
 .dropdown li:hover ul {
     left: auto;
 }
+
 .boite
 {
     animation: TransitionIn2 1.2s;
@@ -239,6 +227,7 @@ nav .active
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    gap: 20%;
     padding: 10%;
 }
 
