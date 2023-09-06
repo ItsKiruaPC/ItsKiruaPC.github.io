@@ -26,6 +26,12 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+/*Iphone*/
+@media screen and (max-height: 650px)
+{
+
+}
+/*Android*/
 @media screen and (max-width: 615px)
 {
     .accueil2
