@@ -34,14 +34,33 @@
 /*Android*/
 @media screen and (max-width: 615px)
 {
-    .accueil2
+    .boite
     {
-        margin-top: 40%;
+        flex-direction: column;
+        
     }
-    .accueil3
+    .box
     {
-        margin-top: 60%;
-        text-align: center;
+        height: 300px !important;
+        width: 400px !important;
+        padding-left: 0%;
+    }
+    .minibox h2
+    {
+        margin: 0 auto;
+    }
+
+    .afficher
+    {
+        height: 300px;
+        width: 400px;
+        
+    }
+    .box .afficher::before
+    {
+        height: 300px !important;
+        width: 400px !important;
+        
     }
     .header img
     {

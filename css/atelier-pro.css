@@ -28,14 +28,37 @@
 }
 @media screen and (max-width: 615px)
 {
-    .accueil2
+    .accueil
     {
-        margin-top: 40%;
+        
     }
-    .accueil3
+    .boite
     {
-        margin-top: 60%;
-        text-align: center;
+        flex-direction: column;
+        
+    }
+    .box
+    {
+        height: 300px !important;
+        width: 400px !important;
+        padding-left: 0%;
+    }
+    .minibox h2
+    {
+        margin: 0 auto;
+    }
+
+    .afficher
+    {
+        height: 300px;
+        width: 400px;
+        
+    }
+    .box .afficher::before
+    {
+        height: 300px !important;
+        width: 400px !important;
+        
     }
     .header img
     {
