@@ -31,6 +31,27 @@
 {
 
 }
+@media screen and (min-height: 768px)
+{
+    .image-parcour
+    {
+        display: none !important;
+    }
+    .accueil2
+    {
+        margin-top: 20%;
+        text-align: center;
+    }
+    .accueil3
+    {
+        margin-top: 20%;
+        text-align: center;
+    }
+    .branches h1
+    {
+        font-size: 46px;
+    }
+}
 /*Android*/
 @media screen and (max-width: 480px) and (orientation: portrait)
 {
@@ -41,10 +62,22 @@
     .accueil2
     {
         margin-top: 40%;
+        text-align: center;
+        justify-content: center !important;
+    }
+    .accueil-content .btn-box
+    {
+        display: flex;
+        width:auto !important;
+        
+    }
+    .accueil2 .btn-box
+    {
+        justify-content: center !important;
     }
     .accueil3
     {
-        margin-top: 60%;
+        margin-top: 40%;
         text-align: center;
     }
     .header img
