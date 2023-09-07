@@ -1,5 +1,6 @@
 let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')
+let test = document.querySelectorAll('header i')
 
 window.onscroll = () => 
 {
@@ -18,12 +19,3 @@ window.onscroll = () =>
         }
     })
 }
-
-  function myFunction2() {
-    var x = document.getElementById("myNavbar");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }

@@ -26,12 +26,78 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+.icons {
+    position: absolute;
+    left: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#check
+{
+    display: none !important;
+}
 /*Iphone*/
 @media screen and (max-height: 650px)
 {
 
 }
-@media screen and (min-height: 768px)
+@media screen and (max-width: 768px)
+{
+    .icons {
+        display: inline-flex;
+    }
+    #check:checked~.icons .bx-menu {
+        display: none;
+    }
+
+    .icons .bx-x {
+        display: none;
+    }
+
+    #check:checked~.icons .bx-x {
+        display: block;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0 .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0 .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.menu {
+        height: 17.7rem;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        opacity: 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+    .dropdown
+    {
+        
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px)
 {
     .image-parcour
     {
@@ -53,7 +119,7 @@
     }
 }
 /*Android*/
-@media screen and (max-width: 480px) and (orientation: portrait)
+@media screen and (max-width: 768px)
 {
     .image-parcour
     {
@@ -84,13 +150,7 @@
     {
         display: none;
     }
-    .navbar
-    {
-        background-color: rgb(3, 22, 73);
-       justify-content: space-around;
-       padding-left: 15px;
-       display: none;
-    }
+
     .navbar a::before{
         display: none;
     }
@@ -120,33 +180,23 @@
     {
         
     }
-    .navbar a 
-    {
-        font-size: 17px;
-        
-    }
-    #myNavbar {
-        display: none;
-    }
     .dropdown ul {display: none;}
-    .dropdown li 
-    {
-        float: left;
-    }
-    a.icon {
-      float: left;
+    a.icons {
+      float: right;
       display: block;
       padding-left: 5px;
     }
-    .icon {
+    .icons {
         position: absolute;
         align-items: center;
+        display: block !important;
         font-size: 200%;
         left: 0;
         color: white;
       }
     
 }
+
 .dark-mode
 {
     --clr-light: #001a28;
@@ -170,16 +220,17 @@ body
     user-select: none;
     z-index: 2;
 }
+
 .header .logo img
 {
     height: 100px;
     align-items: center;
     margin-top: 10px;
 }
-.icon {
+.icons
+{
     display: none;
 }
-
 .navbar
 {
     display: flex;
