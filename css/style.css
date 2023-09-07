@@ -97,7 +97,7 @@
         opacity: 1;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 992px)
 {
     .image-parcour
     {
@@ -139,7 +139,7 @@
     }
     .accueil2 .btn-box
     {
-        justify-content: center !important;
+        justify-content: center;
     }
     .accueil3
     {
@@ -495,8 +495,8 @@ nav .active
 .accueil-presentation .btn-box
 {
     display: flex;
-    justify-content: space-between;
-    width: 345px;
+    justify-content: center;
+    width: 100%;
     height: 50px;
 }
 .image-parcour
