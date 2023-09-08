@@ -43,6 +43,7 @@
 {
 
 }
+/*tkt*/
 @media screen and (max-width: 768px)
 {
     .icons {
@@ -61,7 +62,8 @@
     }
 
     #check:checked~.navbar {
-        height: 17.7rem;
+        height: auto;
+        flex-direction: column;
     }
     .navbar {
         position: absolute;
