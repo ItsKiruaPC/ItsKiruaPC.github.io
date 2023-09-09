@@ -96,7 +96,6 @@
 
     #check:checked~.navbar {
         height: auto;
-        flex-direction: column;
     }
     .navbar {
         position: absolute;
@@ -119,7 +118,6 @@
         font-size: 1.1rem;
         margin: 1.5rem 0;
         opacity: 0;
-        text-align: center;
         transform: translateY(-50px);
         transition: .3s ease;
     }
@@ -146,6 +144,7 @@
         width: auto;
         right: 0 !important;
         padding: 2%;
+        border-radius: 25px;
         height: 7% !important;
         width: 15% !important;
         display: flex;
@@ -155,6 +154,7 @@
     .button-up i
     {
         width: fit-content !important;
+        
     }
     .accueil-contact
     {
@@ -206,10 +206,6 @@
     .branches
     {
         padding-top: 50px !important;
-    }
-    .button-up
-    {
-        
     }
     .dropdown ul {display: none;}
     a.icons {
@@ -274,7 +270,6 @@ body
     font-weight: 500;
     color: white;
     text-decoration: none;
-    margin-left: 25px;
     list-style: none;
 }
 .navbar a:hover
