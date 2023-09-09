@@ -139,6 +139,12 @@
     {
         justify-content: center !important;
     }
+    .accueil-contact
+    {
+        left: 10px !important;
+        margin-left: 0 !important;
+        bottom: 100px !important;
+    }
     .accueil2
     {
         margin-top: 40%;
@@ -433,10 +439,11 @@ nav .active
 .accueil-contact
 {
     position: absolute;
-    bottom: 40px;
+    bottom: 150px;
     width: 170px;
     margin-left: 20px;
     display: flex;
+    left: 100px;
     justify-content: space-between;
     z-index: 1;
 }
