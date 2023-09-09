@@ -148,7 +148,6 @@
         width: 15% !important;
         display: flex;
         justify-content: center;
-        
     }
     .button-up i
     {
@@ -156,9 +155,10 @@
     }
     .accueil-contact
     {
-        left: 10px !important;
-        margin-left: 0 !important;
-        bottom: 100px !important;
+        position: relative !important;
+        margin-top: 50px;
+        bottom: 0 !important;
+        
     }
     .accueil2
     {
@@ -219,7 +219,6 @@
         left: 0;
         color: white;
       }
-    
 }
 
 .dark-mode
@@ -268,6 +267,7 @@ body
     font-weight: 500;
     color: white;
     text-decoration: none;
+    margin-left: 25px;
     list-style: none;
 }
 .navbar a:hover
@@ -451,9 +451,8 @@ nav .active
     position: absolute;
     bottom: 150px;
     width: 170px;
-    margin-left: 20px;
     display: flex;
-    left: 100px;
+    left: auto;
     justify-content: space-between;
     z-index: 1;
 }
@@ -469,6 +468,7 @@ nav .active
     border: 2px solid #00abf0;
     border-radius: 50% 0 50% 0;
     font-size: 20px;
+    
     color: #00abf0;
     text-decoration: none;
     z-index: 2;
