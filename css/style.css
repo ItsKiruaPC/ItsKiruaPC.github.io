@@ -43,9 +43,42 @@
 {
 
 }
-/*tkt*/
+@media screen and (max-width: 992px)
+{
+    .image-parcour
+    {
+        display: none !important;
+    }
+    .accueil2
+    {
+        margin-top: 20%;
+        text-align: center;
+    }
+    .accueil3
+    {
+        margin-top: 20%;
+        text-align: center;
+    }
+    .branches h1
+    {
+        font-size: 46px;
+    }
+}
+#ok
+{
+    display: flex;
+}
+/*Android*/
 @media screen and (max-width: 768px)
 {
+    #ok
+    {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        width: fit-content;
+        text-align: center;
+    }
     .icons {
         display: inline-flex;
     }
@@ -92,52 +125,25 @@
     }
     .dropdown
     {
-        
+        padding-top: px;
     }
     #check:checked~.navbar a {
         transform: translateY(0);
         opacity: 1;
     }
-}
-@media screen and (max-width: 992px)
-{
     .image-parcour
     {
         display: none !important;
     }
-    .accueil2
+    .accueil
     {
-        margin-top: 20%;
-        text-align: center;
-    }
-    .accueil3
-    {
-        margin-top: 20%;
-        text-align: center;
-    }
-    .branches h1
-    {
-        font-size: 46px;
-    }
-}
-/*Android*/
-@media screen and (max-width: 768px)
-{
-    .image-parcour
-    {
-        display: none !important;
+        justify-content: center !important;
     }
     .accueil2
     {
         margin-top: 40%;
         text-align: center;
         justify-content: center !important;
-    }
-    .accueil-content .btn-box
-    {
-        display: flex;
-        width:auto !important;
-        
     }
     .accueil2 .btn-box
     {
@@ -321,7 +327,9 @@ nav .active
     display: flex;
     align-items: center;
     padding: 0 10%;
+    width: auto;
     height: 100vh;
+    justify-content: left;
     color: white;
     /*background: url('../images/perso.jpg') no-repeat;*/
     background: transparent;
