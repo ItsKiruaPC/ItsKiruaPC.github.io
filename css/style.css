@@ -144,7 +144,6 @@
         width: auto;
         right: 0 !important;
         padding: 2%;
-        border-radius: 25px;
         height: 7% !important;
         width: 15% !important;
         display: flex;
@@ -153,8 +152,7 @@
     }
     .button-up i
     {
-        width: fit-content !important;
-        
+        color: #00abf0;
     }
     .accueil-contact
     {
