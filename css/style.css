@@ -123,7 +123,7 @@
     }
     .dropdown
     {
-        padding-top: px;
+        margin: -25px 0 -25px 0 !important;
     }
     #check:checked~.navbar a {
         transform: translateY(0);
@@ -144,7 +144,7 @@
         width: auto;
         right: 0 !important;
         padding: 2%;
-        height: 7% !important;
+        height: auto !important;
         width: 15% !important;
         display: flex;
         justify-content: center;
@@ -334,9 +334,14 @@ nav .active
     background-color: #29274C;
     text-align: center;
     font-size: 200%;
-    width: 3%;
     bottom: 0;
     right: 0;
+    width: auto;
+    padding: 2%;
+}
+.button-up i
+{
+    color: #00abf0;
 }
 .accueil
 {
@@ -498,10 +503,7 @@ nav .active
 {
     background: rgb(2, 74, 116)
 }
-.accueil-presentation
-{
-    max-width: 640px;
-}
+
 .accueil-presentation h1
 {
     font-size: 56px;
