@@ -139,6 +139,23 @@
     {
         justify-content: center !important;
     }
+    .button-up
+    {
+        position: fixed;
+        bottom: 0;
+        width: auto;
+        right: 0 !important;
+        padding: 2%;
+        height: 7% !important;
+        width: 15% !important;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .button-up i
+    {
+        width: fit-content !important;
+    }
     .accueil-contact
     {
         left: 10px !important;
