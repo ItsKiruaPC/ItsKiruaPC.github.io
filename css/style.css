@@ -142,15 +142,6 @@
     }
     .button-up
     {
-        /* position: fixed;
-        bottom: 0;
-        width: auto;
-        right: 0 !important;
-        padding: 2%;
-        height: auto !important;
-        width: 15% !important;
-        display: flex;
-        justify-content: center; */
         position: fixed;
         background-color: #292929;
         width: 12% !important;
@@ -212,6 +203,7 @@
     .boite
     {
         padding-top: 30px;
+        padding-left: 0 !important;
     }
     .branches
     {
