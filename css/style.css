@@ -342,10 +342,15 @@ nav .active
     position:fixed;
     background-color: #29274C;
     text-align: center;
-    font-size: 200%;
-    width: 3%;
-    bottom: 0;
-    right: 0;
+    bottom: 15px;
+    right: 10px;
+    border: none;
+    border-radius: 9%;
+}
+.button-up i
+{
+    font-size: 400%;
+    color: #00abf0;
 }
 .accueil
 {
