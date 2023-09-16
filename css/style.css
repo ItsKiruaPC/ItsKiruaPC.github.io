@@ -121,7 +121,7 @@
         font-size: 1.1rem;
         margin: 1.5rem 0;
         opacity: 0;
-        margin-left: 0 !important;
+        text-align: center;
         transform: translateY(-50px);
         transition: .3s ease;
     }
@@ -338,19 +338,13 @@ nav .active
 }
 .button-up
 {
-    position:  fixed;
-    background-color: #292929;
-    width: 3%;
+    position:fixed;
+    background-color: #29274C;
     text-align: center;
-    right: 0;
-    bottom: 0;
     font-size: 200%;
-    
-    
-}
-.button-up i
-{
-    color: #00abf0;
+    width: 3%;
+    bottom: 0;
+    right: 0;
 }
 .accueil
 {
