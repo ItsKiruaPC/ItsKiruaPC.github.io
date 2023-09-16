@@ -11,29 +11,34 @@
 <body>
     <header class="header">
         <a href="../index.html" class="logo"><img src="../images/AF.png"></a>
-        <a class="icon" onclick="myFunction2()">
+        <input type="checkbox" id="check"/>
+        <label for="check" class="icons">
             <i class='bx bx-menu'></i>
-          </a>
+            <i class='bx bx-x'></i>
+        </label>
             <nav class="navbar" id="myNavbar">
-                    <a href="../index.html#home">Accueil</a>
+                <ul class="dropdown1" id="ok">
+                    <a href="../index.html#home" class="active">Accueil</a>
                     <a href="../index.html#presentation">Présentation</a>
                     <a href="../index.html#filiere">Filière</a>
+                
                     <ul class="dropdown">
-                        <li><a href="atelier-pro.html" class="active">Projets</a>
-                        <ul class="dropdown-scroll">
-                            <li><a href="application.html">Application</a></li>
-                            <li><a href="website.html">Site Web</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            
+                        <li><a href="atelier-pro.html">Projets</a>
+                            <ul class="dropdown-scroll">
+                                <li><a href="application.html">Application</a></li>
+                                <li><a href="website.html">Site Web</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <a href="stage.html">Stages</a>
                     <a href="veille-informatique.html">Veille Informatique</a>
                     <a href="contact.html">Contact</a>
-                
-                </nav>
+                </ul>
+            </nav>
     </header>
-
+    <div class="button-up">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
     <section class="accueil">
         <div class="accueil-content">
             <div class="boite">

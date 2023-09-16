@@ -26,34 +26,168 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-@media screen and (max-width: 615px)
+.icons {
+    position: absolute;
+    left: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#check
 {
-    
+    display: none !important;
+}
+/*Iphone*/
+@media screen and (max-height: 650px)
+{
+
+}
+@media screen and (max-width: 992px)
+{
+    .image-parcour
+    {
+        display: none !important;
+    }
     .accueil2
     {
-        margin-top: 40%;
+        margin-top: 20%;
+        text-align: center;
     }
     .accueil3
     {
-        margin-top: 60%;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .branches h1
+    {
+        font-size: 46px;
+    }
+}
+#ok
+{
+    display: flex;
+}
+/*Android*/
+@media screen and (max-width: 768px)
+{
+    #ok
+    {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        text-align: center;
+    }
+    .icons {
+        display: inline-flex;
+    }
+    #check:checked~.icons .bx-menu {
+        display: none;
+    }
+
+    .icons .bx-x {
+        display: none;
+    }
+
+    #check:checked~.icons .bx-x {
+        display: block;
+    }
+
+    #check:checked~.navbar {
+        height: auto;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0 .1);
+        -webkit-backdrop-filter: blur(50px);
+                backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0 .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.menu {
+        height: 17.7rem;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+    .dropdown
+    {
+        margin: -25px 0 -25px 0 !important;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .image-parcour
+    {
+        display: none !important;
+    }
+    .accueil
+    {
+        justify-content: center !important;
+    }
+    .button-up
+    {
+        position: fixed;
+        background-color: #292929;
+        width: 12% !important;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+        font-size: 200%;
+    }
+    .button-up i
+    {
+        color: #00abf0;
+    }
+    .accueil-contact
+    {
+        position: relative !important;
+        margin-top: 50px;
+        bottom: 0 !important;
+        
+    }
+    .accueil2
+    {
+        margin-top: 40%;
+        text-align: center;
+        justify-content: center !important;
+    }
+    .accueil2 .btn-box
+    {
+        justify-content: center;
+    }
+    .accueil3
+    {
+        margin-top: 40%;
         text-align: center;
     }
     .header img
     {
         display: none;
     }
-    .navbar
-    {
-        background-color: rgb(3, 22, 73);
-       justify-content: space-around;
-       padding-left: 15px;
-       display: none;
-    }
+
     .navbar a::before{
         display: none;
     }
     .header
     {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         justify-content: space-between;
         align-items: center;
@@ -69,41 +203,26 @@
     .boite
     {
         padding-top: 30px;
+        padding-left: 0 !important;
     }
     .branches
     {
         padding-top: 50px !important;
     }
-    .button-up
-    {
-        
-    }
-    .navbar a 
-    {
-        font-size: 17px;
-        
-    }
-    #myNavbar {
-        display: none;
-    }
     .dropdown ul {display: none;}
-    .dropdown li 
-    {
-        float: left;
-    }
-    a.icon {
-      float: left;
+    a.icons {
+      float: right;
       display: block;
       padding-left: 5px;
     }
-    .icon {
+    .icons {
         position: absolute;
         align-items: center;
+        display: block !important;
         font-size: 200%;
         left: 0;
         color: white;
       }
-    
 }
 .dark-mode
 {

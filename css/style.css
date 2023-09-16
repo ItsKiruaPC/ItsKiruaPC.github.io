@@ -9,11 +9,11 @@
 ::-webkit-scrollbar
 {
     width: 10px;
-    background: transparent;
+    background-color: rgb(3, 22, 73);
 }
 ::-webkit-scrollbar-thumb
 {
-    background:  #013c5e;
+    background:  #0379bd;
     border-radius: 50px;
     border: 2px solid black;
 }
@@ -76,6 +76,8 @@
         display: block;
         margin: 0 auto;
         justify-content: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         text-align: center;
     }
@@ -96,7 +98,6 @@
 
     #check:checked~.navbar {
         height: auto;
-        flex-direction: column;
     }
     .navbar {
         position: absolute;
@@ -105,7 +106,8 @@
         width: 100%;
         height: 0;
         background: rgba(0, 0, 0 .1);
-        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+                backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0 .1);
         overflow: hidden;
         transition: .3s ease;
@@ -119,13 +121,13 @@
         font-size: 1.1rem;
         margin: 1.5rem 0;
         opacity: 0;
-        text-align: center;
+        margin-left: 0 !important;
         transform: translateY(-50px);
         transition: .3s ease;
     }
     .dropdown
     {
-        padding-top: px;
+        margin: -25px 0 -25px 0 !important;
     }
     #check:checked~.navbar a {
         transform: translateY(0);
@@ -142,25 +144,23 @@
     .button-up
     {
         position: fixed;
+        background-color: #292929;
+        width: 12% !important;
+        text-align: center;
+        right: 0;
         bottom: 0;
-        width: auto;
-        right: 0 !important;
-        padding: 2%;
-        height: 7% !important;
-        width: 15% !important;
-        display: flex;
-        justify-content: center;
-        
+        font-size: 200%;
     }
     .button-up i
     {
-        width: fit-content !important;
+        color: #00abf0;
     }
     .accueil-contact
     {
-        left: 10px !important;
-        margin-left: 0 !important;
-        bottom: 100px !important;
+        position: relative !important;
+        margin-top: 50px;
+        bottom: 0 !important;
+        
     }
     .accueil2
     {
@@ -187,6 +187,8 @@
     }
     .header
     {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         justify-content: space-between;
         align-items: center;
@@ -202,14 +204,11 @@
     .boite
     {
         padding-top: 30px;
+        padding-left: 0 !important;
     }
     .branches
     {
         padding-top: 50px !important;
-    }
-    .button-up
-    {
-        
     }
     .dropdown ul {display: none;}
     a.icons {
@@ -225,7 +224,6 @@
         left: 0;
         color: white;
       }
-    
 }
 
 .dark-mode
@@ -248,7 +246,10 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     z-index: 2;
 }
 
@@ -337,13 +338,19 @@ nav .active
 }
 .button-up
 {
-    position:fixed;
-    background-color: #29274C;
-    text-align: center;
-    font-size: 200%;
+    position:  fixed;
+    background-color: #292929;
     width: 3%;
-    bottom: 0;
+    text-align: center;
     right: 0;
+    bottom: 0;
+    font-size: 200%;
+    
+    
+}
+.button-up i
+{
+    color: #00abf0;
 }
 .accueil
 {
@@ -458,9 +465,8 @@ nav .active
     position: absolute;
     bottom: 150px;
     width: 170px;
-    margin-left: 20px;
     display: flex;
-    left: 100px;
+    left: auto;
     justify-content: space-between;
     z-index: 1;
 }
@@ -476,6 +482,7 @@ nav .active
     border: 2px solid #00abf0;
     border-radius: 50% 0 50% 0;
     font-size: 20px;
+    
     color: #00abf0;
     text-decoration: none;
     z-index: 2;
@@ -505,10 +512,7 @@ nav .active
 {
     background: rgb(2, 74, 116)
 }
-.accueil-presentation
-{
-    max-width: 640px;
-}
+
 .accueil-presentation h1
 {
     font-size: 56px;

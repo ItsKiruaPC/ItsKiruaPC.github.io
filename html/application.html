@@ -12,31 +12,37 @@
 <body>
     <header class="header">
         <a href="../index.html" class="logo"><img src="../images/AF.png"></a>
-        <a class="icon" onclick="myFunction2()">
+        <input type="checkbox" id="check"/>
+        <label for="check" class="icons">
             <i class='bx bx-menu'></i>
-          </a>
+            <i class='bx bx-x'></i>
+        </label>
             <nav class="navbar" id="myNavbar">
-                    <a href="../index.html#home">Accueil</a>
+                <ul class="dropdown1" id="ok">
+                    <a href="../index.html#home" class="active">Accueil</a>
                     <a href="../index.html#presentation">Présentation</a>
                     <a href="../index.html#filiere">Filière</a>
+                
                     <ul class="dropdown">
                         <li><a href="atelier-pro.html">Projets</a>
-                        <ul class="dropdown-scroll">
-                            <li><a href="application.html" class="active">Application</a></li>
-                            <li><a href="website.html">Site Web</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            
+                            <ul class="dropdown-scroll">
+                                <li><a href="application.html">Application</a></li>
+                                <li><a href="website.html">Site Web</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <a href="stage.html">Stages</a>
                     <a href="veille-informatique.html">Veille Informatique</a>
                     <a href="contact.html">Contact</a>
-                
-                </nav>
+                </ul>
+            </nav>
     </header>
+    <div class="button-up">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
     <section class="accueil" id="genre">
         <div class="accueil-tout">
-            <img src="../images/genre.jpg">
+            <img src="../images/genre.jpg" srcset="../images/genre.jpg 320w">
         <div class="accueil-content">
             <h3>Genres</h3>
             <p>- Le gestionnaire du cinéma peut visualiser les genres de films, en modifier, en ajouter, visualiser le numéro du genre.</br></br>- La barre rechercher nous permet de trouver un genre soit avec le numéro ou bien avec le nom.</br></br>- Le bouton rafraichir nous permet d’actualiser après une modification.</p>
