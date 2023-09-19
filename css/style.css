@@ -146,11 +146,10 @@
     {
         position: fixed;
         background-color: #292929;
-        width: 12% !important;
         text-align: center;
         right: 0;
         bottom: 0;
-        font-size: 200%;
+
     }
     .button-up i
     {
@@ -177,6 +176,12 @@
     {
         margin-top: 40%;
         text-align: center;
+        justify-content: center;
+    }
+    .accueil3 .titre
+    {
+        display: flex;
+        justify-content: center;
     }
     .header img
     {
@@ -276,7 +281,6 @@ body
     font-weight: 500;
     color: white;
     text-decoration: none;
-    margin-left: 25px;
     list-style: none;
 }
 .navbar a:hover
@@ -550,7 +554,7 @@ nav .active
     justify-content: center;
     padding: 0 10%;
     padding-top: 5%;
-    height: 110vh;
+    height: 100vh;
     color: white;
     background: transparent;
     background-size: cover;
