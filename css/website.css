@@ -51,7 +51,6 @@
     }
     .accueil2
     {
-        margin-top: 20%;
         text-align: center;
     }
     .accueil3
@@ -139,6 +138,7 @@
     .accueil
     {
         justify-content: center !important;
+        
     }
     .button-up
     {
@@ -160,16 +160,6 @@
         margin-top: 50px;
         bottom: 0 !important;
         
-    }
-    .accueil2
-    {
-        margin-top: 40%;
-        text-align: center;
-        justify-content: center !important;
-    }
-    .accueil2 .btn-box
-    {
-        justify-content: center;
     }
     .accueil3
     {
@@ -222,6 +212,46 @@
         font-size: 200%;
         left: 0;
         color: white;
+      }
+      .accueil-tout
+      {
+        flex-direction: column;
+        max-width: 350px !important;
+      }
+      .accueil-tout img 
+      {
+        padding: 25% 0 10% 0;
+        width: auto !important;
+        max-height: fit-content !important;
+        max-width: 100%;
+        height: auto;
+      }
+      .accueil-content
+      {
+        text-align: center;
+      }
+      .accueil2
+      {
+        flex-direction: column;
+        height: fit-content !important;
+        padding-top: 30% !important;
+      }
+      .accueil-image
+      {
+        padding: 0 !important;
+        margin-bottom: 40%;
+        
+      }
+      .accueil-image img
+      {
+        width: auto !important;
+        max-height: fit-content !important;
+        max-width: 100%;
+        height: auto !important;
+      }
+      .accueil-content2
+      {
+        text-align: center;
       }
 }
 .dark-mode
