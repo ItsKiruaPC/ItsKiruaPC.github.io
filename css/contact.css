@@ -330,67 +330,26 @@ nav .active
 .dropdown li:hover ul {
     left: auto;
 }
-.body
+.accueil
 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #1d2b3a;
-}
-.inputbox
-{
-    position: relative;
-    width: 250px;   
-}
-.inputbox input
-{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgb(255,255,255,0.25);
-    background: #1d2b3a;
-    border-radius: 10px;
-    outline: none;
+    padding: 0 10%;
+    width: auto;
+    height: 100vh;
+    justify-content: center;
     color: white;
-    font-size: 1em;
-    transition: 0.5s;
-    
-
+    background: transparent;
+    background-size: cover;
+    background-position: center;
 }
-.inputbox span
+.accueil-content
 {
-    position: absolute;
-    left: 0px;
-    padding: 10px;
-    text-transform: uppercase;
-    pointer-events: none;
-    color: rgb(255,255,255,0.25);
-    transition: 0.5s;
-    font-size: 1em;
-    background-color: transparent;
+    max-width: 640px;
 }
-.inputbox input:valid ~ span,
-.inputbox input:focus ~ span
+.accueil-content h1
 {
-    color: aqua;
-    transform: translateX(10px) translateY(-7px);
-    font-size: 0.65em;
-    padding: 0 10px;
-    border-left: 1px solid aqua;
-    border-right: 1px solid aqua;
-    background-color: #1d2b3a;
-}
-.inputbox:nth-child(2) input:valid ~ span,
-.inputbox:nth-child(2) input:focus ~ span
-{
-    background-color: aqua;
-    color: #1d2b3a;
-    border-radius: 1px;
-}
-.inputbox input:valid,
-.inputbox input:focus
-{
-    border: 1px solid aqua;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
 }

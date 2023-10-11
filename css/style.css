@@ -178,12 +178,6 @@
         text-align: center;
         justify-content: center;
     }
-    .accueil4
-    {
-        width: fit-content;
-        text-align: center;
-        justify-content: center !important;
-    }
     .titre3
     {
         width: fit-content;
@@ -228,6 +222,26 @@
     {
         padding-top: 30px;
         padding-left: 0 !important;
+    }
+    .accueil4
+    {
+        height: auto !important;
+        padding-bottom: 20px !important;
+    }
+    .titre2-para
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .titre2-boite
+    {
+        text-align: center !important;
+        padding-bottom: 20px;
+    }
+    .titre2-boite ul
+    {
+        text-align: center !important;
     }
     .branches
     {
@@ -583,7 +597,7 @@ nav .active
     align-items: center;
     justify-content: center;
     padding: 0 10%;
-    height: 100vh;
+    height: 80vh;
     color: white;
     background: transparent;
     background-size: cover;
@@ -604,6 +618,8 @@ nav .active
 {
     padding-top: 5%;
     font-size: 32px;
+    text-align: center;
+    padding-bottom: 40px;
     font-weight: 700;
     color: #0379bd;
 }
@@ -611,6 +627,24 @@ nav .active
 {
     font-size: 16px;
     margin: 20px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.titre2-boite h2
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.titre2-boite ul
+{
+    text-align: left;
+    
+}
+.titre2-boite li
+{
+    padding: 5px;
+    list-style: none;
 }
 .branches
 {
