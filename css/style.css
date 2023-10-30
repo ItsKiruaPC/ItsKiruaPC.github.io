@@ -96,8 +96,6 @@
         display: block;
         margin: 0 auto;
         justify-content: center;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
         width: fit-content;
         text-align: center;
     }
@@ -139,10 +137,9 @@
     .navbar a{
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin: 1.5rem 0 1.5rem 0!important;
         opacity: 0;
         text-align: center;
-        margin-left: 0 !important;
         transform: translateY(-50px);
         transition: .3s ease;
     }
@@ -225,8 +222,6 @@
     }
     .header
     {
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
         height: fit-content;
         justify-content: space-between;
         align-items: center;
@@ -385,7 +380,7 @@ nav .active
 }
 .dropdown ul {
     position: absolute;
-    padding: 25px 20px 15px 0px;
+    padding: 25px 20px 15px 0;
     left: -999em;
     text-align: left;
     z-index: 1;
