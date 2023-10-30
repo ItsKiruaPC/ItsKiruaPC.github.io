@@ -38,6 +38,10 @@
 {
     display: none !important;
 }
+#ok
+{
+    display: flex;
+}
 /*Iphone*/
 @media screen and (max-height: 650px)
 {
@@ -49,28 +53,55 @@
     {
         display: none !important;
     }
+    .accueil-content
+    {
+        text-align: left;
+        padding-left: 10%;
+    }
+    .accueil-content2
+    {
+        padding-right: 10%;
+    }
     .accueil2
     {
         margin-top: 20%;
-        text-align: center;
+        text-align: left;
     }
     .accueil3
     {
         margin-top: 20%;
-        text-align: center;
+        text-align: left;
     }
     .branches h1
     {
         font-size: 46px;
     }
+    .header img
+    {
+        display: none;
+    }
 }
-#ok
+@media screen and (min-width: 950px)
 {
-    display: flex;
+    .active
+    {
+        padding-left: 0;
+    }
+    .header img
+    {
+        display: block;
+    }
+    .header a
+    {
+        margin-left: -3%;
+        width: auto;
+    }
 }
+
 /*Android*/
 @media screen and (max-width: 768px)
 {
+
     #ok
     {
         display: block;
@@ -105,10 +136,10 @@
         left: 0;
         width: 100%;
         height: 0;
-        background: rgba(0, 0, 0 .1);
+        background: rgba(0, 0, 0 ,0.1);
         -webkit-backdrop-filter: blur(50px);
                 backdrop-filter: blur(50px);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0 .1);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0 ,0.1);
         overflow: hidden;
         transition: .3s ease;
     }
@@ -138,17 +169,18 @@
     }
     .accueil
     {
-        justify-content: center !important;
+        flex-direction: column;
+        padding-top: 20% !important;
+        justify-content: normal !important;
     }
     .button-up
     {
         position: fixed;
         background-color: #292929;
-        width: 12% !important;
         text-align: center;
         right: 0;
         bottom: 0;
-        font-size: 200%;
+
     }
     .button-up i
     {
@@ -205,29 +237,20 @@
       display: block;
       padding-left: 5px;
     }
-    .icons {
+    .icons
+    {
         position: absolute;
         align-items: center;
         display: block !important;
         font-size: 200%;
         left: 0;
         color: white;
-      }
-      .accueil-tout
-      {
-        flex-direction: column;
-      }
-      .accueil-tout img 
-      {
-        padding: 25% 0 10% 0;
-        width: auto !important;
-        max-height: fit-content !important;
-        max-width: 100%;
-        height: auto;
-      }
+    }
       .accueil-content
       {
         text-align: center;
+          padding-top: 10%;
+          padding-left: 0 !important;
       }
       .accueil2
       {
@@ -237,8 +260,7 @@
       .accueil-image
       {
         padding: 0 !important;
-        margin-bottom: 70%;
-        
+
       }
       .accueil-image img
       {
@@ -250,6 +272,8 @@
       .accueil-content2
       {
         text-align: center;
+          padding-top: 20%;
+          padding-right: 0 !important;
       }
 }
 .dark-mode
@@ -260,7 +284,7 @@
 body
 {
     background: var(--clr-dark);
-    overflow: overlay;
+    overflow: auto;
 }
 .header
 {
@@ -348,7 +372,7 @@ nav .active
 }
 .dropdown ul {
     position: absolute;
-    padding: 25px 20px 15px 0px;
+    padding: 25px 20px 15px 0;
     left: -999em;
     text-align: left;
     z-index: 1;
@@ -357,6 +381,21 @@ nav .active
 }
 .dropdown li:hover ul {
     left: auto;
+}
+.button-up
+{
+    position:fixed;
+    background-color: #29274C;
+    text-align: center;
+    bottom: 15px;
+    right: 10px;
+    border: none;
+    border-radius: 9%;
+}
+.button-up i
+{
+    font-size: 400%;
+    color: #00abf0;
 }
 .accueil
 {
@@ -372,18 +411,6 @@ nav .active
     justify-content: space-between;
 
 }
-.accueil-tout
-{
-    display: flex;
-    
-    justify-content: space-between;
-    align-items: center;
-}
-.accueil-tout img
-{
-    height: 50%;
-    width: 50%;
-}
 .accueil-content
 {
     max-width: 560px;
@@ -398,6 +425,8 @@ nav .active
 }
 .accueil-content h3
 {
+    text-align: center;
+    line-height: 40px;
     font-size: 32px;
     font-weight: 700;
     color: #0379bd;
@@ -422,12 +451,12 @@ nav .active
 }
 .accueil-image
 {
-    padding-left: 10%;
+    max-width: 560px;
 }
 .accueil-image img
 {
     height: 50%;
-    width: 90%;
+    width: 100%;
 }
 .accueil-content2 p
 {
@@ -441,6 +470,8 @@ nav .active
 }
 .accueil-content2 h3
 {
+    text-align: center;
+    line-height: 40px;
     font-size: 32px;
     font-weight: 700;
     color: #0379bd;
