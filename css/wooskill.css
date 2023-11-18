@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+@keyframes TransitionIn1{
+    from
+    {
+        margin-top: -250px;
+    }
+    to
+    {
+        margin-top: 0;
+    }
+}
+@keyframes TransitionIn2{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 100%;
+    }
+}
 
 :root
 {
@@ -23,7 +43,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif ;
     scroll-behavior: smooth;
 }
 .icons {
@@ -70,6 +90,7 @@
 }
 @media screen and (min-width: 950px)
 {
+
     .active
     {
         padding-left: 0;
@@ -171,6 +192,12 @@
     .button-up i
     {
         color: #00abf0;
+    }
+    .accueil-content
+    {
+        margin-top: 20% !important;
+        font-size: x-large ;
+        text-align: center;
     }
     .accueil-contact
     {
@@ -348,17 +375,10 @@ nav .active
 }
 .accueil
 {
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
+    padding: 0 10%;
     height: 100vh;
     justify-content: center;
     color: white;
-    /*background: url('../images/perso.jpg') no-repeat;*/
-    background: transparent;
-    background-size: cover;
-    background-position: center;
-
 }
 .accueil-tout
 {
@@ -373,13 +393,17 @@ nav .active
 }
 .accueil-content
 {
-    
+    margin-top: 10%;
+    font-size: x-large;
+    text-align: center;
+
 }
 .accueil-content h1
 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
+    text-align: center;
+    font-size: xxx-large;
+    padding: 5%;
+    animation: TransitionIn1 0.75s
     
 }
 .accueil-content h3
@@ -390,8 +414,23 @@ nav .active
 }
 .accueil-content p
 {
-    font-size: 16px;
-    margin: 20px 0 40px;
+    line-height: 40px;
+
+}
+.accueil-download
+{
+    font-size: x-large;
+}
+.accueil-download h1
+{
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 5;
+}
+.accueil-download a
+{
+    text-decoration: none;
+    color: white;
 }
 .accueil2
 {
