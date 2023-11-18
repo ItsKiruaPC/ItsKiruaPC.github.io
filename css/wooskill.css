@@ -195,7 +195,8 @@
     }
     .accueil-content
     {
-        margin-top: 20% !important;
+        margin-top: 0 !important;
+        padding-top: 10%;
         font-size: x-large ;
         text-align: center;
     }
@@ -234,7 +235,7 @@
         height: fit-content;
         justify-content: space-between;
         align-items: center;
-        
+
     }
     .groupe-boite
     {  
@@ -276,6 +277,7 @@ body
 {
     background: var(--clr-dark);
     overflow: auto;
+
 }
 .header
 {
@@ -318,7 +320,7 @@ a.icon
 {
     color: rgb(234, 164, 0);
     transition: 0.5s;
-    
+
 }
 .navbar a::before
 {
@@ -396,7 +398,6 @@ nav .active
     margin-top: 10%;
     font-size: x-large;
     text-align: center;
-
 }
 .accueil-content h1
 {
@@ -419,18 +420,24 @@ nav .active
 }
 .accueil-download
 {
+    padding-top: 10%;
     font-size: x-large;
 }
 .accueil-download h1
 {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 700;
     line-height: 5;
 }
 .accueil-download a
 {
+    padding-left: 20px;
     text-decoration: none;
     color: white;
+}
+.accueil-download a:hover
+{
+    text-decoration: underline;
 }
 .accueil2
 {
