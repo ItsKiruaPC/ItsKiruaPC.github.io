@@ -53,6 +53,10 @@
     {
         display: none;
     }
+    .boite
+    {
+        flex-direction: column;
+    }
 }
 @media screen and (min-width: 950px)
 {
@@ -307,7 +311,7 @@ nav .active
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20%;
+    gap: 5%;
     padding: 10%;
 }
 

@@ -439,5 +439,5 @@ nav .active
 .box:hover .minibox
 {
     opacity: 100%;
-    bottom: 50%;
+    bottom: 40%;
 }
