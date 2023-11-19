@@ -241,6 +241,10 @@
     {
         height: auto !important;
     }
+    .box:hover .minibox
+    {
+        bottom: 35% !important;
+    }
 }
 .dark-mode
 {
@@ -380,7 +384,7 @@ nav .active
 {
     margin-top: 120px;
     position: relative;
-    height: 200px;
+    height: auto;
     width: 600px;
     flex-direction: row;
     border-radius: 10px;
@@ -391,7 +395,7 @@ nav .active
 .afficher img
 {
     position: relative;
-    height: 200px;
+    height: auto;
     width: 100%;
     overflow: hidden;
 }
@@ -407,7 +411,7 @@ nav .active
     background: rgba(0, 0 , 0, 0.5);
     position: absolute;
     opacity: 0;
-    height: 400px;
+    height: 100%;
     width: 100%;
     transition: 0.5s;
     z-index: 1;
