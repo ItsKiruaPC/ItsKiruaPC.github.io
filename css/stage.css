@@ -237,6 +237,10 @@
         left: 0;
         color: white;
       }
+    .afficher img
+    {
+        height: auto !important;
+    }
 }
 .dark-mode
 {
