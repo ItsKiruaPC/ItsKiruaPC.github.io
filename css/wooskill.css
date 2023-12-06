@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
-@keyframes TransitionIn1{
-    from
-    {
-        margin-top: -250px;
-    }
-    to
-    {
-        margin-top: 0;
-    }
-}
 @keyframes TransitionIn2{
     from
     {
