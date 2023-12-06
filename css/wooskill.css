@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+@keyframes TransitionIn1{
+    from
+    {
+        margin-top: -250px;
+    }
+    to
+    {
+        margin-top:  0;
+    }
+}
 @keyframes TransitionIn2{
     from
     {
@@ -185,7 +195,7 @@
     .accueil-content
     {
         margin-top: 0 !important;
-        padding-top: 20%;
+        padding-top: 20% !important;
         font-size: x-large ;
         text-align: center;
     }
@@ -399,7 +409,7 @@ nav .active
 }
 .accueil-content
 {
-    margin-top: 10%;
+    padding-top: 60px;
     font-size: x-large;
     text-align: center;
 }
