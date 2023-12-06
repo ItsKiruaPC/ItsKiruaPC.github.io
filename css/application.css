@@ -167,6 +167,7 @@
     }
     .accueil
     {
+        height: auto !important;
         flex-direction: column;
         padding-top: 20% !important;
         justify-content: normal !important;
@@ -216,7 +217,11 @@
         flex-direction: column;
         text-align: center;
         justify-content: space-between;
-        margin-top: 5%;
+        margin-top: 30%;
+    }
+    .groupe-boite img
+    {
+        width: 70% !important;
     }
     .boite
     {
@@ -252,6 +257,7 @@
       {
         flex-direction: column;
         height: fit-content !important;
+        padding: 0 5% 20% 5% !important;
       }
       .accueil-image
       {
