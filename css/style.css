@@ -438,6 +438,7 @@ nav .active
 }
 .accueil-content
 {
+    padding-top: 50px !important;
     max-width: 640px;
 }
 .accueil-content h1
