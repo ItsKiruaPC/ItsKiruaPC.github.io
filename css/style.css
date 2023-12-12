@@ -93,7 +93,7 @@
 {
     .image-fullstack
     {
-        display: none;
+        display: none !important;
     }
     #ok
     {
