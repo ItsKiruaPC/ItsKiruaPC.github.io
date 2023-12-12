@@ -377,6 +377,8 @@ nav .active
     padding: 25px 20px 15px 0;
     left: -999em;
     text-align: left;
+    display: grid;
+    gap: 10px;
     z-index: 1;
     background: rgb(3, 22, 75);
     border-radius: 10px;
@@ -404,7 +406,7 @@ nav .active
     display: flex;
     align-items: center;
     padding: 0 5%;
-    height: 100vh;
+    height: auto;
     color: white;
     /*background: url('../images/perso.jpg') no-repeat;*/
     background: transparent;
@@ -482,6 +484,29 @@ nav .active
 {
     font-size: 16px;
     margin: 20px 0 40px;
+}
+.accueil-download
+{
+    font-size: x-large;
+    color: white;
+    padding: 5% 5%;
+}
+.accueil-download h1
+{
+    font-size: x-large;
+    font-weight: 700;
+    line-height: 5;
+}
+.accueil-download a
+{
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+.accueil-download a:hover
+{
+    text-decoration: underline;
 }
 .groupe-boite
 {
