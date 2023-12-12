@@ -91,6 +91,10 @@
 /*Android*/
 @media screen and (max-width: 768px)
 {
+    .image-fullstack
+    {
+        display: none;
+    }
     #ok
     {
         display: block;
