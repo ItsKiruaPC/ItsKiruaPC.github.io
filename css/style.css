@@ -82,6 +82,7 @@
         display: none;
     }
 }
+/*Tablette (pas complet)*/
 @media screen and (min-width: 993px)
 {
     .accueil-contact
@@ -290,6 +291,10 @@
     .branches
     {
         padding-top: 50px !important;
+    }
+    .branches h1
+    {
+        font-size: 40px;
     }
     .dropdown ul {display: none;}
     a.icons {
