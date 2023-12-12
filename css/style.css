@@ -304,6 +304,10 @@ body
         opacity: 100%;
     }
 }
+.image-fullstack
+{
+    justify-content: right
+}
 .header
 {
     background-color: rgb(3, 22, 73);
