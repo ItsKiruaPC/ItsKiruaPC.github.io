@@ -49,6 +49,16 @@
 }
 @media screen and (max-width: 992px)
 {
+    .accueil-contact
+    {
+        position: relative !important;
+        margin-top: 50px;
+        bottom: 0 !important;
+    }
+    .image-fullstack img
+    {
+        display: none !important;
+    }
     .image-parcour
     {
         display: none !important;
@@ -72,8 +82,22 @@
         display: none;
     }
 }
-@media screen and (min-width: 950px)
+@media screen and (min-width: 993px)
 {
+    .accueil-contact
+    {
+        position: relative !important;
+        margin-top: 50px;
+        bottom: 0 !important;
+    }
+    .image-fullstack img
+    {
+        width: 100% !important;
+    }
+    .image-fullstack
+    {
+        padding-left: 5%;
+    }
     .active
     {
         padding-left: 0;
@@ -307,6 +331,11 @@ body
 .image-fullstack
 {
     justify-content: right
+}
+.image-fullstack img
+{
+    width: 600px;
+    border-radius: 25px;
 }
 .header
 {
