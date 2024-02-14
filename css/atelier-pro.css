@@ -60,6 +60,10 @@
 }
 @media screen and (min-width: 950px)
 {
+    .minibox h2
+    {
+        font-size: 15px;
+    }
     .active
     {
         padding-left: 0;
@@ -110,6 +114,17 @@
 
     #check:checked~.navbar {
         height: auto;
+    }
+    .title
+    {
+        padding: 10% 10% 0 10%;
+        max-width: 400px;
+    }
+    .title h1
+    {
+        color: white;
+        padding-top: 20% !important;
+        text-align: center;
     }
     .navbar {
         position: absolute;
@@ -213,6 +228,7 @@ body
 {
     background-color: #031649;
     position: fixed;
+    top: 0;
     padding: 20px 2%;
     width: 100%;
     height: 10%;
@@ -316,7 +332,7 @@ nav .active
     align-items: center;
     justify-content: space-between;
     gap: 5%;
-    padding: 10%;
+    padding: 0 10% 0 10%;
 }
 
 @keyframes TransitionIn2
@@ -407,8 +423,9 @@ nav .active
 .box .minibox
 {
     position: absolute;
+    top: 0;
     opacity: 0;
-    bottom: 500px;
+    bottom: 50%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -425,5 +442,34 @@ nav .active
 {
     z-index: 1;
     opacity: 100%;
-    bottom: 45%;
+    top: 50%;
+}
+.title h1
+{
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+.accueil-download
+{
+    color: white;
+    padding: 10%;
+    font-size: x-large;
+    padding-bottom: 50px;
+}
+.accueil-download h1
+{
+    font-size: x-large;
+    font-weight: 700;
+    line-height: 5;
+}
+.accueil-download a
+{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+.accueil-download a:hover
+{
+    text-decoration: underline;
 }
