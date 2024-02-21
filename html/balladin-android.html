@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/application.css">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+<header class="header">
+    <a href="../index.html" class="logo"><img src="../images/AF.png" alt="Logo Adrien Fevre"></a>
+    <input type="checkbox" id="check"/>
+    <label for="check" class="icons">
+        <i class='bx bx-menu'></i>
+        <i class='bx bx-x'></i>
+    </label>
+    <nav class="navbar" id="myNavbar">
+        <ul class="dropdown1" id="ok">
+            <a href="../index.html#home" class="active">Accueil</a>
+            <a href="../index.html#competence">Conpétences</a>
+            <a href="../index.html#presentation">Présentation</a>
+            <a href="../index.html#filiere">Filière</a>
+
+            <ul class="dropdown">
+                <li><a href="atelier-pro.html">Projets</a>
+                    <ul class="dropdown-scroll">
+                        <li><a href="atelier-pro.html#title1">1ère Année</a></li>
+                        <li><a href="atelier-pro.html#title2">2ème Année</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="stage.html">Stages</a>
+            <a href="veille-informatique.html">Veille Technologique</a>
+        </ul>
+    </nav>
+</header>
+<div class="button-up">
+    <a href="#genre"><i class='bx bx-up-arrow-alt'></i></a>
+</div>
+<section class="accueil" id="genre" style="height: 100vh">
+    <div class="accueil-image">
+        <img src="../images/genre.jpg" srcset="../images/genre.jpg 320w" alt="Image des options pour les genres (ajout/suppression/modification)">
+    </div>
+    <div class="accueil-content">
+        <h3>Genres</h3>
+        <p>- Le gestionnaire du cinéma peut visualiser les genres de films, en modifier, en ajouter, visualiser le numéro du genre.<br><br>- La barre rechercher nous permet de trouver un genre soit avec le numéro ou bien avec le nom.<br><br>- Le bouton rafraichir nous permet d’actualiser après une modification.</p>
+    </div>
+</section>
+<section class="accueil2" id="place">
+    <div class="accueil-content2">
+        <h3>Places</h3>
+        <p>- Cette fonctionnalité permet au gérant de voir les salles, leur numéro et le nombre de place.<br><br>- Nous pouvons aussi modifier si l'on souhaite, le nombre de place ou bien le nom.</p>
+    </div>
+    <div class="accueil-image">
+        <img src="../images/place.jpg" alt="Image des options pour les places (ajout/suppression/modification)">
+    </div>
+</section>
+<section class="accueil" id="film">
+    <div class="accueil-image">
+        <img src="../images/film.jpg" alt="Image des option pour les films (ajout/suppression/modification)">
+    </div>
+    <div class="accueil-content">
+        <h3>Film</h3>
+        <p>- Cette fonctionnalité, permet d’ajouter des films, avec un numéro automatique, un titre, un public et un ou plusieurs genres.<br><br>- Nous pouvons aussi supprimer le film en le sélectionnant et en cliquant sur le bouton supprimer.</p>
+    </div>
+</section>
+<section class="accueil2" id="projection">
+    <div class="accueil-content2">
+        <h3>Projections</h3>
+        <p>- Cette dernière fonctionnalité permet au gestionnaire de crée le planning des films. Ici il rentre le nom du film, son numéro, la salle où il sera visionné, la date et l’heure, et une description du film.</p>
+    </div>
+    <div class="accueil-image">
+        <img src="../images/projection.jpg" alt="Image des option pour les projections (ajout/suppression/modification)">
+    </div>
+</section>
+<section class="accueil" id="pdf">
+    <div class="accueil-image">
+        <img src="../images/pdf.jpg" alt="Image des option pour faire des Pdf des films">
+    </div>
+    <div class="accueil-content">
+        <h3>Pdf</h3>
+        <p>- Cette fonctionnalité permet de crée un PDF, qui sera envoyé au mail du client qui a réservé sa place, avec la date.</p>
+    </div>
+</section>
+<article class="accueil-download">
+    <h1>En savoir plus ?</h1>
+    <i class='bx bxs-file-pdf' style="scale: 150%"></i><a href="../pdf/Projet_Professionnel_SLAM_1.pdf" target="_blank" rel="noreferrer">Le compte rendu</a><br><br>
+</article>
+<script src="../js/index.js"></script>
+</body>
+</html>
