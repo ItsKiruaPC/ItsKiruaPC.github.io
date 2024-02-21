@@ -64,7 +64,6 @@
     }
     .accueil2
     {
-        margin-top: 20%;
         text-align: left;
     }
     .accueil3
@@ -273,11 +272,12 @@
     .accueil-image
     {
         padding: 0 !important;
-
+    justify-content: center;
+        display: flex;
     }
     .accueil-image img
     {
-        width: auto !important;
+        width: 50%;
         max-height: fit-content !important;
         max-width: 100%;
         height: auto !important;
@@ -417,7 +417,7 @@ nav .active
 {
     display: flex;
     align-items: center;
-    padding: 0 5%;
+    padding:5% 5%;
     height: auto;
     color: white;
     /*background: url('../images/perso.jpg') no-repeat;*/
@@ -471,7 +471,7 @@ nav .active
 .accueil-image img
 {
     height: 50%;
-    width: 100%;
+    width: 50%;
 }
 .accueil-content2 p
 {
@@ -533,4 +533,8 @@ nav .active
     padding-top: 5%;
     height: 70%;
     width: 40%;
+}
+hr
+{
+    border: 2px solid white;
 }
