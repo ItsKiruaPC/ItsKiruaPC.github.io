@@ -463,7 +463,7 @@ nav .active
     padding: 0 5%;
     height: 100vh;
     color: white;
-    /*background: url('../images/perso.jpg') no-repeat;*/
+
     background: transparent;
     background-size: cover;
     background-position: center;

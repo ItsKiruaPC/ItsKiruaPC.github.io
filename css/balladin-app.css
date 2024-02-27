@@ -417,10 +417,10 @@ nav .active
 {
     display: flex;
     align-items: center;
-    padding: 0 5%;
-    height: auto;
+    padding:5% 5%;
+    height: 100vh;
     color: white;
-    /*background: url('../images/perso.jpg') no-repeat;*/
+
     background: transparent;
     background-size: cover;
     background-position: center;
@@ -457,7 +457,7 @@ nav .active
     padding: 0 5%;
     height: 100vh;
     color: white;
-    /*background: url('../images/perso.jpg') no-repeat;*/
+
     background: transparent;
     background-size: cover;
     background-position: center;
@@ -533,4 +533,8 @@ nav .active
     padding-top: 5%;
     height: 70%;
     width: 40%;
+}
+hr
+{
+    border: 2px solid white;
 }
