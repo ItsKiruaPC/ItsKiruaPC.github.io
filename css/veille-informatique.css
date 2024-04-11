@@ -257,10 +257,6 @@
     {
         padding-top: 10% !important;
     }
-    .accueil-centre
-    {
-        padding-top: 15%;
-    }
 }
 .dark-mode
 {
@@ -373,7 +369,8 @@ nav .active
 }
 .accueil
 {
-    padding: 10% 10%;
+    padding: 0 10%;
+    margin-top: 250px;
     width: auto;
     display: grid;
     height: 100vh;
@@ -407,6 +404,10 @@ nav .active
     right: 10px;
     border: none;
     border-radius: 9%;
+}
+.images-techno
+{
+
 }
 .button-up i
 {
@@ -550,6 +551,18 @@ img {
     background: #001a28 ;
     text-align: center;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.images-techno
+{
+    display: flex;
+    justify-content: space-around;
+}
+.images-techno img
+{
+    margin: 20px;
+    width: 30%;
 }
 .accueil-centre
 {
