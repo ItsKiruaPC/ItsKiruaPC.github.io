@@ -55,10 +55,6 @@
         margin-top: 50px;
         bottom: 0 !important;
     }
-    .image-fullstack img
-    {
-        display: none !important;
-    }
     .image-parcour
     {
         display: none !important;
@@ -91,10 +87,6 @@
         margin-top: 50px;
         bottom: 0 !important;
     }
-    .image-fullstack img
-    {
-        width: 100% !important;
-    }
     .image-fullstack
     {
         padding-left: 5%;
@@ -116,10 +108,6 @@
 /*Android*/
 @media screen and (max-width: 768px)
 {
-    .image-fullstack
-    {
-        display: none !important;
-    }
     #ok
     {
         display: block;
@@ -183,10 +171,6 @@
     .image-parcour
     {
         display: none !important;
-    }
-    .accueil
-    {
-        justify-content: center !important;
     }
     .button-up
     {
@@ -320,12 +304,18 @@ body
 }
 .image-fullstack
 {
-    justify-content: right
+    justify-content: right;
+
 }
 .image-fullstack img
 {
     width: 600px;
     border-radius: 25px;
+    @media screen and (max-width: 1030px)
+    {
+        width: 100%;
+        max-width: 600px;
+    }
 }
 .header
 {
@@ -448,12 +438,18 @@ nav .active
 .accueil
 {
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 0 10%;
     width: auto;
     height: 100vh;
     justify-content: space-between;
     color: white;
+    @media screen and (max-width: 1200px)
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
 .accueil-content
 {
@@ -543,6 +539,7 @@ nav .active
 .accueil2
 {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: right;
     padding: 10% 10%;
@@ -550,6 +547,14 @@ nav .active
     color: white;
     background: transparent center;
     background-size: cover;
+    @media screen and (max-width: 1200px)
+    {
+        flex-direction: column-reverse;
+    }
+}
+.accueil2 ul
+{
+    text-align: left;
 }
 .accueil-contact
 {
@@ -623,6 +628,7 @@ nav .active
 }
 .accueil-presentation p
 {
+    text-align: justify;
     font-size: 16px;
     margin: 20px 0 40px;
 }
