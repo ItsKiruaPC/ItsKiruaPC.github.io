@@ -214,10 +214,6 @@
         justify-content: space-between;
         margin-top: 5%;
     }
-    .boite
-    {
-        padding-top: 30px;
-    }
     .branches
     {
         padding-top: 50px !important;
@@ -254,6 +250,10 @@ body
 {
     background: var(--clr-dark);
     overflow: auto;
+}
+.accueil-content
+{
+    width: 100%;
 }
 .button-up
 {
@@ -373,9 +373,14 @@ nav .active
 {
     animation: TransitionIn2 1.2s;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     padding: 10%;
+    @media screen and (max-width: 768px)
+    {
+        flex-direction: column;
+    }
 }
 
 @keyframes TransitionIn2
