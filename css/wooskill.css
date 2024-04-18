@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 @keyframes TransitionIn1{
     from
     {
@@ -191,13 +192,6 @@
     .button-up i
     {
         color: #00abf0;
-    }
-    .accueil-content
-    {
-        margin-top: 0 !important;
-        padding-top: 20% !important;
-        font-size: x-large ;
-        text-align: center;
     }
     .accueil-contact
     {
@@ -394,7 +388,7 @@ nav .active
 }
 .accueil
 {
-    padding: 0 10%;
+    margin: 80px 10%;
     height: 100vh;
     justify-content: center;
     color: white;
@@ -412,9 +406,12 @@ nav .active
 }
 .accueil-content
 {
-    padding-top: 60px;
     font-size: x-large;
     text-align: center;
+    @media screen and (max-width: 768px)
+    {
+        margin: 100px 10%;
+    }
 }
 .accueil-content h1
 {
@@ -422,7 +419,10 @@ nav .active
     font-size: xxx-large;
     padding: 5%;
     animation: TransitionIn1 0.75s
-    
+}
+.accueil-content h2
+{
+    font-size: x-large;
 }
 .accueil-content h3
 {
@@ -433,11 +433,14 @@ nav .active
 .accueil-content p
 {
     line-height: 40px;
-
+}
+.accueil-content img
+{
+    width: 100%;
 }
 .accueil-download
 {
-    padding-top: 10%;
+    padding: 10%;
     font-size: x-large;
     padding-bottom: 50px;
 }
@@ -463,7 +466,7 @@ nav .active
     padding: 0 5%;
     height: 100vh;
     color: white;
-    /*background: url('../images/perso.jpg') no-repeat;*/
+
     background: transparent;
     background-size: cover;
     background-position: center;
@@ -489,4 +492,21 @@ nav .active
 {
     font-size: 16px;
     margin: 20px 0 40px;
+
+}
+.division
+{
+    padding-top: 10%;
+    display: flex;
+    width: 100%;
+}
+.division-1
+{
+    width: 50%;
+    margin: 20px;
+}
+.division-2
+{
+    width: 50%;
+    margin: 20px;
 }
