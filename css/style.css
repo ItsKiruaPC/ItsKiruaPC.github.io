@@ -192,9 +192,7 @@
     }
     .accueil3
     {
-        margin-top: 40%;
-        text-align: center;
-        justify-content: center;
+
     }
     .titre2
     {
@@ -302,9 +300,9 @@ body
 {
     width: 600px;
     border-radius: 25px;
+    margin-top: 20px;
     @media screen and (max-width: 1030px)
     {
-        margin-top: 20px;
         width: 100%;
         max-width: 600px;
     }
@@ -325,7 +323,10 @@ body
             user-select: none;
     z-index: 2;
 }
-
+.boite-para img
+{
+    width: 100%;
+}
 .header .logo img
 {
     height: 100px;
@@ -434,7 +435,7 @@ nav .active
     align-items: center;
     padding: 0 10%;
     width: auto;
-    height: 100vh;
+    height: 100%;
     justify-content: space-between;
     color: white;
     @media screen and (max-width: 1200px)
@@ -445,7 +446,7 @@ nav .active
 }
 .accueil-content
 {
-    padding-top: 50px !important;
+    padding-top: 120px;
     max-width: 640px;
 }
 .accueil-content h1
@@ -643,12 +644,10 @@ nav .active
     align-items: center;
     justify-content: center;
     padding: 0 10%;
-    padding-top: 10%;
     height: 100vh;
     color: white;
-    background: transparent;
+    background: transparent center;
     background-size: cover;
-    background-position: center;
 }
 .accueil4
 {
@@ -657,9 +656,8 @@ nav .active
     padding: 10% 10%;
     height: 100%;
     color: white;
-    background: transparent;
+    background: transparent center;
     background-size: cover;
-    background-position: center;
 }
 .titre3
 {

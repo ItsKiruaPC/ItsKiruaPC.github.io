@@ -82,10 +82,6 @@
         margin-top: 50px;
         bottom: 0 !important;
     }
-    .image-fullstack
-    {
-        padding-left: 5%;
-    }
     .active
     {
         padding-left: 0;
@@ -302,9 +298,9 @@ body
 {
     width: 600px;
     border-radius: 25px;
+    margin-top: 20px;
     @media screen and (max-width: 1030px)
     {
-        margin-top: 20px;
         width: 100%;
         max-width: 600px;
     }
@@ -680,9 +676,8 @@ nav .active
     padding: 10% 10%;
     height: 100%;
     color: white;
-    background: transparent;
+    background: transparent center;
     background-size: cover;
-    background-position: center;
 }
 .titre3
 {
@@ -711,10 +706,10 @@ nav .active
 .titre2-para
 {
     font-size: 16px;
-    margin: 20px 0 40px;
-    display: flex;
+    margin: 50px auto;
+    max-width: 600px;
     justify-content: space-between;
-    text-align: left;
+    text-align: justify;
 }
 .titre2-boite h2
 {
@@ -849,4 +844,26 @@ nav .active
     z-index: -1;
     transform: translateX(-50%) rotate(45deg);
 }
-
+.accueil-download
+{
+    font-size: x-large;
+    color: white;
+    padding: 5% 5%;
+}
+.accueil-download h1
+{
+    font-size: x-large;
+    font-weight: 700;
+    line-height: 5;
+}
+.accueil-download a
+{
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+.accueil-download a:hover
+{
+    text-decoration: underline;
+}
