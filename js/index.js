@@ -19,3 +19,14 @@ window.onscroll = () =>
         }
     })
 }
+document.getElementById("scrollButton").addEventListener('click', () =>
+{
+    const topHeight = 120;
+
+    window.scrollTo(
+        {
+            top: -topHeight,
+            behavior:"smooth"
+        }
+    )
+})

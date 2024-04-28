@@ -412,10 +412,6 @@ nav .active
     border: none;
     border-radius: 9%;
 }
-.images-techno
-{
-
-}
 .button-up i
 {
     font-size: 400%;
@@ -569,7 +565,6 @@ img {
 .images-techno img
 {
     margin: 20px;
-    width: 30%;
 }
 .accueil-centre
 {

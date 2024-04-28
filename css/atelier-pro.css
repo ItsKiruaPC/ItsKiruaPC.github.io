@@ -115,16 +115,6 @@
     #check:checked~.navbar {
         height: auto;
     }
-    .title
-    {
-        padding: 10% 10% 0 10%;
-    }
-    .title h1
-    {
-        color: white;
-        padding-top: 20% !important;
-        text-align: center;
-    }
     .navbar {
         position: absolute;
         top: 100%;
@@ -288,6 +278,13 @@ nav .active
 {
     color: #00abf0 !important;
 }
+.accueil
+{
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    color: white;
+}
 .dropdown, .dropdown ul {
     padding: 0;
     margin: 0;
@@ -364,6 +361,14 @@ nav .active
 {
     font-size: 400%;
     color: #00abf0;
+}
+.accueil-content
+{
+    padding-top: 120px;
+}
+.title
+{
+    text-align: center;
 }
 .boite a
 {
@@ -481,12 +486,6 @@ nav .active
     opacity: 100%;
     top: 50%;
 }
-.title h1
-{
-    color: white;
-    margin-top: 10%;
-    text-align: center;
-}
 .accueil-download
 {
     color: white;
@@ -496,9 +495,14 @@ nav .active
 }
 .accueil-download h1
 {
-    font-size: x-large;
+    font-size: 100%;
     font-weight: 700;
     line-height: 5;
+    @media screen and (max-width: 350px)
+    {
+        line-height: normal;
+        padding: 10% 0;
+    }
 }
 .accueil-download a
 {
