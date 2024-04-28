@@ -253,10 +253,6 @@
         left: 0;
         color: white;
       }
-    .accueil-content
-    {
-        padding-top: 10% !important;
-    }
 }
 .dark-mode
 {
@@ -390,9 +386,14 @@ nav .active
 {
     max-width: 1100px;
     padding-top: 5%;
+    justify-content: center;
     display:flex;
     flex-wrap:wrap;
     align-content: flex-start;
+    @media screen and (max-width: 768px)
+    {
+        padding-top: 10%;
+    }
 }
 .accueil-content h1
 {
@@ -424,7 +425,7 @@ nav .active
     align-self: flex-start;
     width: 100%;
     max-width: 300px;
-    margin: 2em auto;
+    margin: 5px;
     background-color: var(--var-card-dark);
     border-radius: 15px;
     padding: 2rem 2rem 1rem 2rem;

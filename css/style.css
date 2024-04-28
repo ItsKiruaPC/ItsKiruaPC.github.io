@@ -473,11 +473,8 @@ nav .active
 .accueil-content .btn-box
 {
     display: flex;
-    /*justify-content: space-between;*/
-    /*width: 345px;*/
     gap: 10px;
     flex-wrap: wrap;
-    /*width: 545px;*/
     height: 50px;
 
 }
