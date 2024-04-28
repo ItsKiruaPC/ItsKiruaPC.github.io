@@ -55,15 +55,6 @@
         margin-top: 50px;
         bottom: 0 !important;
     }
-    .image-parcour
-    {
-        display: none !important;
-    }
-    .accueil3
-    {
-        margin-top: 20%;
-        text-align: center;
-    }
     .branches h1
     {
         font-size: 46px;
@@ -163,10 +154,6 @@
         transform: translateY(0);
         opacity: 1;
     }
-    .image-parcour
-    {
-        display: none !important;
-    }
     .button-up
     {
         position: fixed;
@@ -189,10 +176,6 @@
     .accueil2 .btn-box
     {
         justify-content: center;
-    }
-    .accueil3
-    {
-
     }
     .titre2
     {
@@ -254,20 +237,25 @@
     {
         font-size: 40px;
     }
-    .dropdown ul {display: none;}
-    a.icons {
+    .dropdown ul
+    {
+        display: none;
+    }
+    a.icons
+    {
       float: right;
       display: block;
       padding-left: 5px;
     }
-    .icons {
+    .icons
+    {
         position: absolute;
         align-items: center;
         display: block !important;
         font-size: 200%;
         left: 0;
         color: white;
-      }
+    }
 }
 
 .dark-mode
@@ -326,6 +314,7 @@ body
 .boite-para img
 {
     width: 100%;
+    max-width: 400px;
 }
 .header .logo img
 {
@@ -638,14 +627,22 @@ nav .active
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 5% 30% 0 0;
+    margin: 0 30% 0 0;
+    @media screen and (max-width: 1200px)
+    {
+        margin: 0;
+    }
+    @media screen and (max-width: 768px)
+    {
+        display: none;
+    }
 }
 .accueil3
 {
     align-items: center;
     justify-content: center;
     padding: 0 10%;
-    height: 100vh;
+    height: 100%;
     color: white;
     background: transparent center;
     background-size: cover;
@@ -709,7 +706,6 @@ nav .active
 }
 .branches
 {
-    padding-top: 100px;
     font-size: 32px;
     font-weight: 700;
     color: #0379bd;
@@ -725,7 +721,7 @@ nav .active
 .boite
 {
     max-width: 560px;
-    padding-left: 20px;
+    margin: 10px;
 }
 .boite-titre
 {
@@ -743,8 +739,7 @@ nav .active
 {
     font-size: 15px;
     line-height: 2;
-    padding-top: 5%;
-    padding-bottom: 60px;
+    margin-top: 5%;
     text-align: center;
 }
 .container{
