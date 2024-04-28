@@ -364,13 +364,19 @@ nav .active
     background: rgb(3, 22, 75);
     border-radius: 10px;
 }
-.dropdown li:hover ul {
+.dropdown li:hover ul
+{
     left: auto;
+    @media screen and (max-width: 768px)
+    {
+        display: none;
+    }
 }
+
 .accueil
 {
     padding: 0 10%;
-    margin-top: 250px;
+    margin-top: 120px;
     width: auto;
     display: grid;
     height: 100vh;

@@ -379,9 +379,15 @@ nav .active
     background: rgb(3, 22, 75);
     border-radius: 10px;
 }
-.dropdown li:hover ul {
+.dropdown li:hover ul
+{
     left: auto;
+    @media screen and (max-width: 768px)
+    {
+        display: none;
+    }
 }
+
 .boite
 {
     animation: TransitionIn2 1.2s;
