@@ -43,11 +43,15 @@
 {
 
 }
-@media screen and (max-width: 992px)
+@media screen and (max-width: 1025px)
 {
     .image-parcour
     {
         display: none !important;
+    }
+    .logo
+    {
+        display: none;
     }
     .accueil2
     {
@@ -159,14 +163,15 @@
         justify-content: center !important;
     }
     .button-up
-    {
-        position: fixed;
-        background-color: #292929;
-        text-align: center;
-        right: 0;
-        bottom: 0;
-
-    }
+{
+    position:fixed;
+    background-color: #29274C;
+    text-align: center;
+    bottom: 15px;
+    right: 10px;
+    border: none;
+    border-radius: 9%;
+}
     .button-up i
     {
         color: #00abf0;

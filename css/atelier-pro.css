@@ -43,13 +43,13 @@
 {
 
 }
-@media screen and (max-width: 992px)
+@media screen and (max-width: 1025px)
 {
     .image-parcour
     {
         display: none !important;
     }
-    .header img
+    .logo
     {
         display: none;
     }
@@ -67,10 +67,6 @@
     .active
     {
         padding-left: 0;
-    }
-    .header img
-    {
-        display: block;
     }
     .header a
     {
@@ -165,11 +161,6 @@
     {
         color: #00abf0;
     }
-    .header img
-    {
-        display: none;
-    }
-
     .navbar a::before{
         display: none;
     }
@@ -226,6 +217,10 @@ body
     align-items: center;
     user-select: none;
     z-index: 2;
+    @media screen and (max-width: 1025px)
+    {
+        justify-content: space-evenly;
+    }
 }
 .header .logo img
 {
@@ -244,7 +239,7 @@ a.icon
 .navbar a
 {
     position: relative;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     color: white;
     text-decoration: none;
@@ -356,6 +351,7 @@ nav .active
     right: 10px;
     border: none;
     border-radius: 9%;
+    z-index: 999;
 }
 .button-up i
 {
@@ -366,9 +362,14 @@ nav .active
 {
     padding-top: 120px;
 }
+
 .title
 {
     text-align: center;
+}
+.title h1
+{
+    font-size: 20px;
 }
 .boite a
 {
@@ -476,9 +477,10 @@ nav .active
     color: white;
     z-index: 0;
 }
-.box .minibox h1{
+.box .minibox h2{
     display: flex;
     text-align: center;
+    font-size: calc(15px + 0.390625vw);
 }
 .box:hover .minibox
 {
@@ -489,13 +491,12 @@ nav .active
 .accueil-download
 {
     color: white;
-    padding: 10%;
+    padding: 10% 10% 50px 10%;
     font-size: x-large;
-    padding-bottom: 50px;
 }
 .accueil-download h1
 {
-    font-size: 100%;
+    font-size: 20px;
     font-weight: 700;
     line-height: 5;
     @media screen and (max-width: 350px)
@@ -509,6 +510,7 @@ nav .active
     padding-left: 20px;
     text-decoration: none;
     color: white;
+    font-size: 15px;
 }
 .accueil-download a:hover
 {
